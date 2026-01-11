@@ -69,12 +69,26 @@ export const LEARNING_DATA = {
         id: 'html-resources',
         title: "Learning Resources",
         resources: [
-          { name: "MDN Web Docs", url: "developer.mozilla.org", desc: "Comprehensive HTML documentation" },
-          { name: "W3Schools", url: "w3schools.com/html", desc: "Interactive tutorials and examples" },
-          { name: "HTML5 Doctor", url: "html5doctor.com", desc: "HTML5 element reference" },
-          { name: "WebAIM", url: "webaim.org", desc: "Web accessibility resources" },
-          { name: "A11y Project", url: "a11yproject.com", desc: "Accessibility checklist and guides" },
-          { name: "freeCodeCamp", url: "freecodecamp.org", desc: "Free HTML courses with projects" }
+          { name: "MDN Web Docs", url: "https://developer.mozilla.org", desc: "Comprehensive HTML documentation", type: "docs" },
+          { name: "W3Schools", url: "https://www.w3schools.com/html", desc: "Interactive tutorials and examples", type: "docs" },
+          { name: "HTML5 Doctor", url: "https://html5doctor.com", desc: "HTML5 element reference", type: "docs" },
+          { name: "WebAIM", url: "https://webaim.org", desc: "Web accessibility resources", type: "docs" },
+          { name: "A11y Project", url: "https://www.a11yproject.com", desc: "Accessibility checklist and guides", type: "docs" },
+          { name: "freeCodeCamp", url: "https://www.freecodecamp.org", desc: "Free HTML courses with projects", type: "docs" }
+        ]
+      },
+      {
+        id: 'html-youtube',
+        title: "YouTube Channels & Tutorials",
+        resources: [
+          { name: "freeCodeCamp.org", url: "https://www.youtube.com/@freecodecamp", desc: "Full-length HTML/CSS crash courses (10+ hours)", type: "youtube" },
+          { name: "Traversy Media", url: "https://www.youtube.com/@TraversyMedia", desc: "HTML crash courses and real-world projects by Brad Traversy", type: "youtube" },
+          { name: "The Net Ninja", url: "https://www.youtube.com/@NetNinja", desc: "2000+ tutorials including comprehensive HTML series", type: "youtube" },
+          { name: "Web Dev Simplified", url: "https://www.youtube.com/@WebDevSimplified", desc: "Clear HTML explanations with best practices", type: "youtube" },
+          { name: "Kevin Powell", url: "https://www.youtube.com/@KevinPowell", desc: "HTML & CSS expert with responsive design focus", type: "youtube" },
+          { name: "Dave Gray", url: "https://www.youtube.com/@DaveGrayTeachesCode", desc: "Full HTML course for beginners with projects", type: "youtube" },
+          { name: "SuperSimpleDev", url: "https://www.youtube.com/@SuperSimpleDev", desc: "HTML Full Course – Beginner to Pro", type: "youtube" },
+          { name: "Programming with Mosh", url: "https://www.youtube.com/@programmingwithmosh", desc: "HTML crash course with clean code practices", type: "youtube" }
         ]
       }
     ]
@@ -127,12 +141,26 @@ export const LEARNING_DATA = {
         id: 'css-resources',
         title: "Learning Resources",
         resources: [
-          { name: "CSS-Tricks", url: "css-tricks.com", desc: "Tips, tricks, and techniques" },
-          { name: "MDN CSS Guide", url: "developer.mozilla.org/CSS", desc: "Complete CSS reference" },
-          { name: "Flexbox Froggy", url: "flexboxfroggy.com", desc: "Learn Flexbox through games" },
-          { name: "Grid Garden", url: "cssgridgarden.com", desc: "Learn CSS Grid through games" },
-          { name: "Can I Use", url: "caniuse.com", desc: "Browser support tables" },
-          { name: "Sass Documentation", url: "sass-lang.com", desc: "Official Sass guide" }
+          { name: "CSS-Tricks", url: "https://css-tricks.com", desc: "Tips, tricks, and techniques", type: "docs" },
+          { name: "MDN CSS Guide", url: "https://developer.mozilla.org/CSS", desc: "Complete CSS reference", type: "docs" },
+          { name: "Flexbox Froggy", url: "https://flexboxfroggy.com", desc: "Learn Flexbox through games", type: "docs" },
+          { name: "Grid Garden", url: "https://cssgridgarden.com", desc: "Learn CSS Grid through games", type: "docs" },
+          { name: "Can I Use", url: "https://caniuse.com", desc: "Browser support tables", type: "docs" },
+          { name: "Sass Documentation", url: "https://sass-lang.com", desc: "Official Sass guide", type: "docs" }
+        ]
+      },
+      {
+        id: 'css-youtube',
+        title: "YouTube Channels & Tutorials",
+        resources: [
+          { name: "Kevin Powell", url: "https://www.youtube.com/@KevinPowell", desc: "CSS evangelist - Grid, Flexbox, responsive design master", type: "youtube" },
+          { name: "Traversy Media", url: "https://www.youtube.com/@TraversyMedia", desc: "CSS crash courses with Bootstrap, Tailwind, Sass", type: "youtube" },
+          { name: "Web Dev Simplified", url: "https://www.youtube.com/@WebDevSimplified", desc: "Modern CSS tutorials and best practices", type: "youtube" },
+          { name: "freeCodeCamp.org", url: "https://www.youtube.com/@freecodecamp", desc: "Full CSS courses with projects", type: "youtube" },
+          { name: "The Net Ninja", url: "https://www.youtube.com/@NetNinja", desc: "CSS fundamentals to advanced animations", type: "youtube" },
+          { name: "DesignCourse", url: "https://www.youtube.com/@DesignCourse", desc: "CSS with UI/UX design principles by Gary Simon", type: "youtube" },
+          { name: "Layout Land", url: "https://www.youtube.com/@LayoutLand", desc: "CSS Grid and Flexbox by Jen Simmons (Mozilla)", type: "youtube" },
+          { name: "DevTips", url: "https://www.youtube.com/@DevTips", desc: "CSS layouts, classes, and responsive design", type: "youtube" }
         ]
       }
     ]
@@ -189,12 +217,26 @@ export const LEARNING_DATA = {
         id: 'js-resources',
         title: "Learning Resources",
         resources: [
-          { name: "JavaScript.info", url: "javascript.info", desc: "Modern JavaScript tutorial" },
-          { name: "MDN JavaScript", url: "developer.mozilla.org/JavaScript", desc: "Complete JS reference" },
-          { name: "Eloquent JavaScript", url: "eloquentjavascript.net", desc: "Free online book" },
-          { name: "You Don't Know JS", url: "github.com/getify/You-Dont-Know-JS", desc: "Deep dive into JS" },
-          { name: "ES6 Features", url: "es6-features.org", desc: "ES6 feature overview" },
-          { name: "JavaScript30", url: "javascript30.com", desc: "30 day vanilla JS challenge" }
+          { name: "JavaScript.info", url: "https://javascript.info", desc: "Modern JavaScript tutorial", type: "docs" },
+          { name: "MDN JavaScript", url: "https://developer.mozilla.org/JavaScript", desc: "Complete JS reference", type: "docs" },
+          { name: "Eloquent JavaScript", url: "https://eloquentjavascript.net", desc: "Free online book", type: "docs" },
+          { name: "You Don't Know JS", url: "https://github.com/getify/You-Dont-Know-JS", desc: "Deep dive into JS", type: "docs" },
+          { name: "ES6 Features", url: "https://es6-features.org", desc: "ES6 feature overview", type: "docs" },
+          { name: "JavaScript30", url: "https://javascript30.com", desc: "30 day vanilla JS challenge", type: "docs" }
+        ]
+      },
+      {
+        id: 'js-youtube',
+        title: "YouTube Channels & Tutorials",
+        resources: [
+          { name: "Traversy Media", url: "https://www.youtube.com/@TraversyMedia", desc: "JavaScript crash courses and modern ES6+ features", type: "youtube" },
+          { name: "freeCodeCamp.org", url: "https://www.youtube.com/@freecodecamp", desc: "10+ hour full JavaScript courses", type: "youtube" },
+          { name: "The Net Ninja", url: "https://www.youtube.com/@NetNinja", desc: "Async/await, promises, modern JS features", type: "youtube" },
+          { name: "Programming with Mosh", url: "https://www.youtube.com/@programmingwithmosh", desc: "Clean JavaScript code with 17+ years experience", type: "youtube" },
+          { name: "Web Dev Simplified", url: "https://www.youtube.com/@WebDevSimplified", desc: "JavaScript in Y minutes - concise tutorials", type: "youtube" },
+          { name: "Academind", url: "https://www.youtube.com/@academind", desc: "JavaScript fundamentals to advanced by Maximilian", type: "youtube" },
+          { name: "Fireship", url: "https://www.youtube.com/@Fireship", desc: "100 seconds of JavaScript - lightning fast explainers", type: "youtube" },
+          { name: "Fun Fun Function", url: "https://www.youtube.com/@funfunfunction", desc: "Functional programming with JavaScript", type: "youtube" }
         ]
       }
     ]
@@ -310,12 +352,30 @@ export const LEARNING_DATA = {
         id: 'react-resources',
         title: "Learning Resources",
         resources: [
-          { name: "React Official Docs", url: "react.dev", desc: "New official documentation" },
-          { name: "React TypeScript Cheatsheet", url: "react-typescript-cheatsheet.netlify.app", desc: "TS with React" },
-          { name: "Awesome React", url: "github.com/enaqx/awesome-react", desc: "Curated React resources" },
-          { name: "React Patterns", url: "reactpatterns.com", desc: "Common React patterns" },
-          { name: "Epic React", url: "epicreact.dev", desc: "Kent C. Dodds course" },
-          { name: "UI.dev", url: "ui.dev", desc: "React courses and tutorials" }
+          { name: "React Official Docs", url: "https://react.dev", desc: "New official documentation", type: "docs" },
+          { name: "React TypeScript Cheatsheet", url: "https://react-typescript-cheatsheet.netlify.app", desc: "TS with React", type: "docs" },
+          { name: "Awesome React", url: "https://github.com/enaqx/awesome-react", desc: "Curated React resources", type: "docs" },
+          { name: "React Patterns", url: "https://reactpatterns.com", desc: "Common React patterns", type: "docs" },
+          { name: "Epic React", url: "https://epicreact.dev", desc: "Kent C. Dodds course", type: "docs" },
+          { name: "UI.dev", url: "https://ui.dev", desc: "React courses and tutorials", type: "docs" }
+        ]
+      },
+      {
+        id: 'react-youtube',
+        title: "YouTube Channels & Tutorials",
+        resources: [
+          { name: "Traversy Media", url: "https://www.youtube.com/@TraversyMedia", desc: "React crash courses with hooks, context, routing", type: "youtube" },
+          { name: "freeCodeCamp.org", url: "https://www.youtube.com/@freecodecamp", desc: "Full React courses - beginner to advanced", type: "youtube" },
+          { name: "The Net Ninja", url: "https://www.youtube.com/@NetNinja", desc: "React tutorial series with hooks and Firebase", type: "youtube" },
+          { name: "Codevolution", url: "https://www.youtube.com/@Codevolution", desc: "React basics to Redux - step by step", type: "youtube" },
+          { name: "JavaScript Mastery", url: "https://www.youtube.com/@javascriptmastery", desc: "Real-world React projects and applications", type: "youtube" },
+          { name: "Web Dev Simplified", url: "https://www.youtube.com/@WebDevSimplified", desc: "React hooks and best practices", type: "youtube" },
+          { name: "Academind", url: "https://www.youtube.com/@academind", desc: "Complete React guide by Maximilian", type: "youtube" },
+          { name: "Ben Awad", url: "https://www.youtube.com/@bawad", desc: "React with GraphQL and real-world apps", type: "youtube" },
+          { name: "Pedro Tech", url: "https://www.youtube.com/@PedroTechnologies", desc: "8+ hour comprehensive React course", type: "youtube" },
+          { name: "Lee Robinson (Vercel)", url: "https://www.youtube.com/@leerob", desc: "Learn Next.js and React 2025 playlists", type: "youtube" },
+          { name: "Jack Herrington", url: "https://www.youtube.com/@jherr", desc: "Advanced React patterns and micro frontends", type: "youtube" },
+          { name: "Fireship", url: "https://www.youtube.com/@Fireship", desc: "React in 100 seconds and quick tutorials", type: "youtube" }
         ]
       }
     ]
@@ -388,12 +448,28 @@ export const LEARNING_DATA = {
         id: 'angular-resources',
         title: "Learning Resources",
         resources: [
-          { name: "Angular Official Docs", url: "angular.io/docs", desc: "Comprehensive Angular guide" },
-          { name: "Angular University", url: "angular-university.io", desc: "In-depth Angular courses" },
-          { name: "NgRx Documentation", url: "ngrx.io", desc: "State management guide" },
-          { name: "Angular In Depth", url: "angularindepth.com", desc: "Advanced Angular articles" },
-          { name: "Awesome Angular", url: "github.com/PatrickJS/awesome-angular", desc: "Curated resources" },
-          { name: "Tour of Heroes", url: "angular.io/tutorial", desc: "Official Angular tutorial" }
+          { name: "Angular Official Docs", url: "https://angular.io/docs", desc: "Comprehensive Angular guide", type: "docs" },
+          { name: "Angular University", url: "https://angular-university.io", desc: "In-depth Angular courses", type: "docs" },
+          { name: "NgRx Documentation", url: "https://ngrx.io", desc: "State management guide", type: "docs" },
+          { name: "Angular In Depth", url: "https://angularindepth.com", desc: "Advanced Angular articles", type: "docs" },
+          { name: "Awesome Angular", url: "https://github.com/PatrickJS/awesome-angular", desc: "Curated resources", type: "docs" },
+          { name: "Tour of Heroes", url: "https://angular.io/tutorial", desc: "Official Angular tutorial", type: "docs" }
+        ]
+      },
+      {
+        id: 'angular-youtube',
+        title: "YouTube Channels & Tutorials",
+        resources: [
+          { name: "freeCodeCamp.org", url: "https://www.youtube.com/@freecodecamp", desc: "17+ hour Angular full course with TypeScript", type: "youtube" },
+          { name: "Traversy Media", url: "https://www.youtube.com/@TraversyMedia", desc: "Angular crash courses and real projects", type: "youtube" },
+          { name: "Programming with Mosh", url: "https://www.youtube.com/@programmingwithmosh", desc: "Angular fundamentals with clean code", type: "youtube" },
+          { name: "Academind", url: "https://www.youtube.com/@academind", desc: "Complete Angular course by Maximilian", type: "youtube" },
+          { name: "Codevolution", url: "https://www.youtube.com/@Codevolution", desc: "Angular tutorial from basics to advanced", type: "youtube" },
+          { name: "The Net Ninja", url: "https://www.youtube.com/@NetNinja", desc: "Angular series with components and services", type: "youtube" },
+          { name: "Teddy Smith", url: "https://www.youtube.com/@TeddySmithDev", desc: "Beginner-friendly Angular playlist", type: "youtube" },
+          { name: "ARC Tutorials", url: "https://www.youtube.com/@ARCTutorials", desc: "Step-by-step Angular videos", type: "youtube" },
+          { name: "Procademy", url: "https://www.youtube.com/@procademy", desc: "Angular 13+ fundamentals and CLI", type: "youtube" },
+          { name: "Bitfumes", url: "https://www.youtube.com/@Bitfumes", desc: "3+ hour Angular 14 tutorial with Firebase", type: "youtube" }
         ]
       }
     ]
@@ -467,12 +543,27 @@ export const LEARNING_DATA = {
         id: 'vue-resources',
         title: "Learning Resources",
         resources: [
-          { name: "Vue.js Official Docs", url: "vuejs.org", desc: "Comprehensive Vue guide" },
-          { name: "Vue Mastery", url: "vuemastery.com", desc: "Premium Vue courses" },
-          { name: "Vue School", url: "vueschool.io", desc: "Video courses for Vue" },
-          { name: "Awesome Vue", url: "github.com/vuejs/awesome-vue", desc: "Curated Vue resources" },
-          { name: "VueUse Docs", url: "vueuse.org", desc: "Composition utilities" },
-          { name: "Nuxt Documentation", url: "nuxt.com", desc: "Nuxt framework guide" }
+          { name: "Vue.js Official Docs", url: "https://vuejs.org", desc: "Comprehensive Vue guide", type: "docs" },
+          { name: "Vue Mastery", url: "https://vuemastery.com", desc: "Premium Vue courses", type: "docs" },
+          { name: "Vue School", url: "https://vueschool.io", desc: "Video courses for Vue", type: "docs" },
+          { name: "Awesome Vue", url: "https://github.com/vuejs/awesome-vue", desc: "Curated Vue resources", type: "docs" },
+          { name: "VueUse Docs", url: "https://vueuse.org", desc: "Composition utilities", type: "docs" },
+          { name: "Nuxt Documentation", url: "https://nuxt.com", desc: "Nuxt framework guide", type: "docs" }
+        ]
+      },
+      {
+        id: 'vue-youtube',
+        title: "YouTube Channels & Tutorials",
+        resources: [
+          { name: "The Net Ninja", url: "https://www.youtube.com/@NetNinja", desc: "Comprehensive Vue.js tutorial series", type: "youtube" },
+          { name: "Traversy Media", url: "https://www.youtube.com/@TraversyMedia", desc: "Vue crash courses with real projects", type: "youtube" },
+          { name: "freeCodeCamp.org", url: "https://www.youtube.com/@freecodecamp", desc: "Full Vue.js courses for beginners", type: "youtube" },
+          { name: "Academind", url: "https://www.youtube.com/@academind", desc: "Vue complete guide by Maximilian", type: "youtube" },
+          { name: "Program with Erik", url: "https://www.youtube.com/@ProgramWithErik", desc: "Vue.js specialist with in-depth tutorials", type: "youtube" },
+          { name: "Vue Mastery", url: "https://www.youtube.com/@VueMastery", desc: "Advanced Vue techniques and best practices", type: "youtube" },
+          { name: "Lachlan Miller", url: "https://www.youtube.com/@Lachlan19900", desc: "Vue 3 crash course and testing with Vue Test Utils", type: "youtube" },
+          { name: "LearnVue", url: "https://www.youtube.com/@LearnVue", desc: "Modern Vue.js tutorials and tips", type: "youtube" },
+          { name: "JavaScript Mastery", url: "https://www.youtube.com/@javascriptmastery", desc: "Vue projects and real-world applications", type: "youtube" }
         ]
       }
     ]
@@ -627,14 +718,31 @@ export const LEARNING_DATA = {
         id: 'other-resources',
         title: "Learning Resources",
         resources: [
-          { name: "Svelte Tutorial", url: "svelte.dev/tutorial", desc: "Interactive Svelte guide" },
-          { name: "SolidJS Docs", url: "solidjs.com", desc: "Official Solid documentation" },
-          { name: "Next.js Learn", url: "nextjs.org/learn", desc: "Next.js interactive course" },
-          { name: "Remix Docs", url: "remix.run/docs", desc: "Remix documentation" },
-          { name: "Astro Docs", url: "docs.astro.build", desc: "Astro documentation" },
-          { name: "Qwik Docs", url: "qwik.builder.io", desc: "Qwik framework guide" },
-          { name: "Alpine.js Docs", url: "alpinejs.dev", desc: "Alpine.js documentation" },
-          { name: "HTMX Essays", url: "htmx.org/essays", desc: "HTMX philosophy & guides" }
+          { name: "Svelte Tutorial", url: "https://svelte.dev/tutorial", desc: "Interactive Svelte guide", type: "docs" },
+          { name: "SolidJS Docs", url: "https://solidjs.com", desc: "Official Solid documentation", type: "docs" },
+          { name: "Next.js Learn", url: "https://nextjs.org/learn", desc: "Next.js interactive course", type: "docs" },
+          { name: "Remix Docs", url: "https://remix.run/docs", desc: "Remix documentation", type: "docs" },
+          { name: "Astro Docs", url: "https://docs.astro.build", desc: "Astro documentation", type: "docs" },
+          { name: "Qwik Docs", url: "https://qwik.builder.io", desc: "Qwik framework guide", type: "docs" },
+          { name: "Alpine.js Docs", url: "https://alpinejs.dev", desc: "Alpine.js documentation", type: "docs" },
+          { name: "HTMX Essays", url: "https://htmx.org/essays", desc: "HTMX philosophy & guides", type: "docs" }
+        ]
+      },
+      {
+        id: 'other-youtube',
+        title: "YouTube Channels & Tutorials",
+        resources: [
+          { name: "Fireship", url: "https://www.youtube.com/@Fireship", desc: "Svelte, Qwik, Astro in 100 seconds", type: "youtube" },
+          { name: "Traversy Media", url: "https://www.youtube.com/@TraversyMedia", desc: "Svelte, Next.js, Remix crash courses", type: "youtube" },
+          { name: "The Net Ninja", url: "https://www.youtube.com/@NetNinja", desc: "Svelte tutorial series from scratch", type: "youtube" },
+          { name: "Lee Robinson (Vercel)", url: "https://www.youtube.com/@leerob", desc: "Next.js tutorials and app router guide", type: "youtube" },
+          { name: "Web Dev Simplified", url: "https://www.youtube.com/@WebDevSimplified", desc: "Next.js, Remix, and modern frameworks", type: "youtube" },
+          { name: "freeCodeCamp.org", url: "https://www.youtube.com/@freecodecamp", desc: "Full Svelte, Next.js, Astro courses", type: "youtube" },
+          { name: "Academind", url: "https://www.youtube.com/@academind", desc: "Next.js complete guide", type: "youtube" },
+          { name: "Jack Herrington", url: "https://www.youtube.com/@jherr", desc: "Next.js, Astro, Fresh framework comparisons", type: "youtube" },
+          { name: "Theo - t3.gg", url: "https://www.youtube.com/@t3dotgg", desc: "T3 stack, Next.js, and React ecosystem opinions", type: "youtube" },
+          { name: "Huntabyte", url: "https://www.youtube.com/@huntabyte", desc: "Svelte and SvelteKit tutorials", type: "youtube" },
+          { name: "Kevin Powell", url: "https://www.youtube.com/@KevinPowell", desc: "HTMX and progressive enhancement", type: "youtube" }
         ]
       }
     ]

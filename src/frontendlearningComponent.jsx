@@ -1,19 +1,28 @@
 import React, { useState, useMemo } from 'react';
-import { Code, Palette, Sparkles, BookOpen, Search, ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
+import { Code, Palette, Sparkles, BookOpen, Search, ChevronDown, ChevronRight, ExternalLink, Youtube, FileText } from 'lucide-react';
 import { LEARNING_DATA } from './constants/index';
 import { TABS, TAB_COLORS, TAB_TEXT_COLORS } from './constants/index';
 import { normalizeLearningData } from './utils/add_url';
 
 
-const LEARNING_DATA_NORMALIZED = normalizeLearningData(LEARNING_DATA);
-
 const ResourceCard = ({ resource }) => (
-  <div className="bg-slate-800 p-4 rounded-lg border border-slate-600 hover:border-blue-500 transition-colors group">
+  <div className={`bg-slate-800 p-4 rounded-lg border transition-colors group cursor-pointer ${
+    resource.type === 'youtube' ? 'border-slate-600 hover:border-red-500' : 'border-slate-600 hover:border-blue-500'
+  }`} onClick={()=> window.open(resource.url)}>
     <div className="flex items-start justify-between mb-2">
-      <h4 className="font-semibold text-blue-400 group-hover:text-blue-300">
-        {resource.name}
-      </h4>
-      <ExternalLink className="w-4 h-4 text-slate-400 flex-shrink-0 ml-2 cursor-pointer" onClick={() => window.open(resource.url , '_blank')} />
+      <div className="flex items-center gap-2">
+        {resource.type === 'youtube' ? (
+          <Youtube className="w-5 h-5 text-red-500 flex-shrink-0" />
+        ) : (
+          <FileText className="w-5 h-5 text-blue-400 flex-shrink-0" />
+        )}
+        <h4 className={`font-semibold ${
+          resource.type === 'youtube' ? 'text-red-400 group-hover:text-red-300' : 'text-blue-400 group-hover:text-blue-300'
+        }`}>
+          {resource.name}
+        </h4>
+      </div>
+      <ExternalLink className="w-4 h-4 text-slate-400 flex-shrink-0 ml-2 cursor-pointer" onClick={()=> window.open(resource.url)}/>
     </div>
     <p className="text-sm text-slate-400 mb-2">{resource.desc}</p>
     <p className="text-xs text-slate-500 font-mono">{resource.url}</p>
@@ -67,7 +76,7 @@ const FrontendLearningHub = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedSections, setExpandedSections] = useState({});
 
-  const currentData = LEARNING_DATA_NORMALIZED[activeTab];
+  const currentData = LEARNING_DATA[activeTab];
 
   const filteredSections = useMemo(() => {
     if (!searchTerm) return currentData.sections;
@@ -115,7 +124,7 @@ const FrontendLearningHub = () => {
 
         {/* Navigation Tabs */}
         <div className="flex flex-wrap gap-3 justify-center mb-8">
-          {Object.entries(LEARNING_DATA_NORMALIZED).map(([key, data]) => {
+          {Object.entries(LEARNING_DATA).map(([key, data]) => {
             const Icon = data.icon;
             return (
               <button
